@@ -202,15 +202,30 @@ ul li .active {
 
 .card_number_input {
 	max-width: 480px;
-	display: grid;
-	grid-template-columns: 4fr 2fr 1fr;
+	display: flex;
 	border-radius: 4px;
 	background-color: #edeff2;
 	padding: 8px 12px;
 
-	> input {
+	> #card_no {
 		background-color: transparent;
 		border: none;
+		width: 100%;
+		outline: none;
+	}
+
+	> #month_year_input {
+		background-color: transparent;
+		border: none;
+		outline: none;
+		max-width: 100px;
+	}
+
+	> #cvc_input {
+		background-color: transparent;
+		border: none;
+		outline: none;
+		max-width: 50px;
 	}
 }
 
