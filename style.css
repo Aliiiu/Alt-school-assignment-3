@@ -102,6 +102,7 @@ ul li .active {
 
 .main-content {
 	display: flex;
+	overflow: hidden;
 	max-width: 890px;
 	margin: 0 auto;
 	margin-top: 85px;
@@ -205,6 +206,7 @@ ul li .active {
 }
 
 .card_number_input {
+	max-width: 480px;
 	display: grid;
 	grid-template-columns: 4fr 2fr 1fr;
 	border-radius: 4px;
@@ -254,10 +256,43 @@ ul li .active {
 }
 
 .pricing-info {
-	background-color: #007bff;
+	background-color: #1179bf;
+	max-width: 312px;
+	width: 100%;
 	color: white;
-	padding: 20px;
-	border-radius: 10px;
+	padding-inline: 40px;
+	padding-top: 42px;
+
+	> .plan > h3 {
+		font-size: 20px;
+		font-weight: 700;
+	}
+	> .plan > p {
+		font-style: italic;
+	}
+
+	> .testimonial {
+		padding-top: 43px;
+		border-top: 1px solid rgba(255, 255, 255, 0.2);
+		margin-top: 41px;
+
+		> p {
+			font-style: italic;
+		}
+
+		> .user {
+			display: flex;
+			gap: 10px;
+			align-items: center;
+			margin-top: 12px;
+
+			> img {
+				width: 40px;
+				height: 40px;
+				border-radius: 100px;
+			}
+		}
+	}
 }
 
 .footer {
