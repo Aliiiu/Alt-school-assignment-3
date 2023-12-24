@@ -267,10 +267,35 @@ ul li .active {
 		font-size: 20px;
 		font-weight: 700;
 	}
-	> .plan > p {
+	> .plan > .tenure {
 		font-style: italic;
+		max-width: 169px;
+		margin-top: 12px;
 	}
 
+	> .features {
+		display: flex;
+		flex-direction: column;
+		gap: 16px;
+		padding-block: 36px;
+
+		> .feature_item {
+			display: flex;
+			gap: 11px;
+			align-items: center;
+		}
+	}
+
+	> .more_info {
+		max-width: 186px;
+
+		> a {
+			font-weight: 700;
+			color: white;
+			font-style: italic;
+			text-decoration: underline;
+		}
+	}
 	> .testimonial {
 		padding-top: 43px;
 		border-top: 1px solid rgba(255, 255, 255, 0.2);
@@ -292,6 +317,31 @@ ul li .active {
 				border-radius: 100px;
 			}
 		}
+	}
+}
+
+.pricing {
+	color: white;
+	font-size: 6em; /* Adjust based on your preference */
+	display: flex;
+	margin-top: 12px;
+
+	> .currency {
+		font-size: 0.3em; /* Adjust the size relative to the amount */
+		margin-right: 0.1em;
+		align-self: flex-start;
+	}
+
+	> .amount {
+		margin: 0;
+		padding: 0;
+		line-height: 0.9;
+	}
+
+	> .period {
+		font-size: 0.2em;
+		margin-left: 0.1em;
+		align-self: flex-end;
 	}
 }
 
