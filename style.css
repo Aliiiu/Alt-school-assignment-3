@@ -257,6 +257,7 @@ ul li .active {
 	> p {
 		color: #646e7a;
 		font-size: 14px;
+		max-width: 250px;
 
 		> span {
 			color: #1d2c3c;
@@ -364,5 +365,31 @@ ul li .active {
 
 	> span {
 		color: #31708f;
+	}
+}
+
+@media (max-width: 768px) {
+	header > nav > ul {
+		display: none;
+	}
+
+	header {
+		padding-inline: 10px;
+	}
+
+	.main-content {
+		flex-direction: column;
+		border-radius: 0px;
+	}
+
+	.checkout-form-header,
+	.checkout-form-body,
+	.checkout-form-footer {
+		padding-inline: 10px;
+	}
+
+	.pricing-info {
+		max-width: 100%;
+		padding-bottom: 40px;
 	}
 }
